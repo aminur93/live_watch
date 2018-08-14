@@ -1,0 +1,394 @@
+/*
+ 
+Templete for final year project Online Cloth Store 
+Author name: aminur rashid
+Author email: aminurrashid126@gmail.com
+
+
+*/
+/*General Style*/
+
+body{
+	font-family: 'Oswald', sans-serif;
+	font-size:14px;
+	line-height: 1.42857143;
+	color: #333333;
+	background: #EEEDED;
+	overflow-x: hidden;
+}
+
+/*Top Navbar Style*/
+
+#top{
+	background:#555555;
+	padding: 10px 0;
+	
+}
+#top.offer{
+	color: #fff;
+}
+#top.offer.btn{
+	text-transform:uppercase;
+}
+@media (max-width:991px){
+	#top.offer{
+		margin-bottom:10px;
+	}
+}
+@media (max-width:991px){
+	#top{
+		font-size:12px;
+		text-align:center;
+	}
+}
+#top a{
+	color:#fff;
+}
+#top ul.menu{
+	padding-top: 5px;
+	margin:0;
+	text-align:right;
+	font-size:12px;
+	list-style:none;
+}
+@media (max-width:991px){
+	#top ul.menu{
+		text-align:center;
+		
+	}
+}
+
+#top ul.menu> li{
+	display:inline-block;
+	
+}
+#top ul.menu> li a{
+	color:#eeeeee;
+}
+#top ul.menu> li + li:before{
+	content: "|\00a0";
+	padding: 0 5px;
+	color:#f7f7f7;
+}
+
+/*header style*/
+.navbar{
+	background:white;
+	padding-top:10px;
+	padding-bottom: 10px;
+}
+.navbar-collapse .right{
+	float: right;
+}
+.navbar-brand{
+	float: left;
+	padding: 10px 15px;
+	font-size: 18px;
+	line-height: 20px;
+	height:70px;
+}
+.navbar-brand:hover,
+.navbar-brand:focus{
+	text-decoration:none;
+}
+.navbar ul.nav> li > a{
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size:14px;
+}
+.padding-nav{
+	padding-top:10px;
+}
+.navbar ul.nav> li > a:hover{
+	background:#e7e7e7;
+}
+.btn-primary{
+	color: rgb(255,255,255);
+	background-color:rgb(79,191,168);
+	border-color: rgb(65,179,156);
+}
+#search .navbar-form{
+	float: right;
+}
+#search{
+	clear: both;
+	border-top: solid 1px #9adacd;
+	text-align:right;
+	
+}
+#search .navbar-form .input-group{
+	display:table;
+}
+#search .navbar-form .input-group .form-control{
+	width:100%;
+}
+
+/*slider style*/
+.sally-slider{background:#E4E4E4;padding-bottom:30px;padding-top: 30px;margin-top:-20px;}
+  
+/*advantage our site styles*/
+#advantages{
+	background:#E4E4E4;
+	text-align: center;
+}
+#advantages .box .icon{
+	position: absolute;
+	font-size:120px;
+	width: 100%;
+	text-align: center;
+	top: -20px;
+	left:0;
+	height: 100%;
+	float: left;
+	color:#eeeeee;
+	transition: all 0.2s ease-out;
+	z-index: 1;
+	box-sizing: border-box;
+	
+}
+#advantages .box h3{
+	position: relative;
+	margin: 0 0 20px;
+	font-weight: 300;
+	text-transform: uppercase;
+	z-index: 2;
+}
+#advantages .box h3 a:hover{
+	text-decoration: none;
+}
+#advantages .box p{
+	position:relative;
+	color:#555555;
+	z-index: 2;
+}
+.box{
+	background:#fff;
+	margin:0 0 30px;
+	border: solid 1px #e6e6e6;
+	box-sizing: border-box;
+	padding: 20px;
+	box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+
+/*product style*/
+#hot h2{
+	text-align:center;
+	text-transform: uppercase;
+	font-size: 36px;
+	color: #4993e4;
+	font-weight:100;
+	
+}
+#hot .box{
+	margin: 0 0 0;
+}
+#pavel{
+	background-color:#E4E4E4;
+	padding-top: 20px;
+	
+}
+#content{
+	padding-left:25px;
+}
+
+/* media css*/
+@media (max-width:786px){
+	.single{
+		width:60%;
+		margin: auto;
+	}
+	p{
+		text-align: center;
+	}
+	.btn-sally{
+		margin: auto;
+		display: block;
+	}
+	.left{
+		margin: auto;
+	}
+	.right{
+		margin: auto;
+	}
+	
+}
+
+
+/*footer style*/
+.full {
+    width: 100%;    
+}
+.gap {
+	height: 30px;
+	width: 100%;
+	clear: both;
+	display: block;
+}
+.footer {
+	background: #EDEFF1;
+	height: auto;
+	padding-bottom: 30px;
+	position: relative;
+	width: 100%;
+	border-bottom: 1px solid #CCCCCC;
+	border-top: 1px solid #DDDDDD;
+}
+.footer p {
+	margin: 0;
+}
+.footer img {
+	max-width: 100%;
+}
+.footer h3 {
+	border-bottom: 1px solid #BAC1C8;
+	color: #54697E;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 27px;
+	padding: 40px 0 10px;
+	text-transform: uppercase;
+}
+.footer ul {
+	font-size: 13px;
+	list-style-type: none;
+	margin-left: 0;
+	padding-left: 0;
+	margin-top: 15px;
+	color: #7F8C8D;
+}
+.footer ul li a {
+	padding: 0 0 5px 0;
+	display: block;
+}
+.footer a {
+	color: #78828D
+}
+.supportLi h4 {
+	font-size: 20px;
+	font-weight: lighter;
+	line-height: normal;
+	margin-bottom: 0 !important;
+	padding-bottom: 0;
+}
+.newsletter-box input#appendedInputButton {
+	background: #FFFFFF;
+	display: inline-block;
+	float: left;
+	height: 30px;
+	clear: both;
+	width: 100%;
+}
+.newsletter-box .btn {
+	border: medium none;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	-ms-border-radius: 3px;
+	border-radius: 3px;
+	display: inline-block;
+	height: 40px;
+	padding: 0;
+	width: 100%;
+	color: #fff;
+}
+.newsletter-box {
+	overflow: hidden;
+}
+.bg-gray {
+	background-image: -moz-linear-gradient(center bottom, #BBBBBB 0%, #F0F0F0 100%);
+	box-shadow: 0 1px 0 #B4B3B3;
+}
+.social li {
+	background: none repeat scroll 0 0 #B5B5B5;
+	border: 2px solid #B5B5B5;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	-ms-border-radius: 50%;
+	border-radius: 50%;
+	float: left;
+	height: 36px;
+	line-height: 36px;
+	margin: 0 8px 0 0;
+	padding: 0;
+	text-align: center;
+	width: 36px;
+	transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+	-webkit-transition: all 0.5s ease 0s;
+	-ms-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+}
+.social li:hover {
+	transform: scale(1.15) rotate(360deg);
+	-webkit-transform: scale(1.1) rotate(360deg);
+	-moz-transform: scale(1.1) rotate(360deg);
+	-ms-transform: scale(1.1) rotate(360deg);
+	-o-transform: scale(1.1) rotate(360deg);
+}
+.social li a {
+	color: #EDEFF1;
+}
+.social li:hover {
+	border: 2px solid #2c3e50;
+	background: #2c3e50;
+}
+.social li a i {
+	font-size: 16px;
+	margin: 0 0 0 5px;
+	color: #EDEFF1 !important;
+}
+.footer-bottom {
+	background: #555555;
+	border-top: 1px solid #DDDDDD;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color:#fff;
+}
+.footer-bottom p.pull-left {
+	padding-top: 6px;
+}
+.payments {
+	font-size: 1.5em;	
+}
+
+/*login form styles*/
+#login-form{
+	width: 50%;
+	height: 65%;
+	border: 2px solid #000;
+	border-radius: 15px;
+	box-shadow: 7px 7px 15px rgba(0,0,0,0.6);
+	margin: 8% auto;
+	padding: 20px;
+	background-color: #fff;
+}
+
+/*Camera styles*/
+#my_camera{
+    margin-top: -30px;
+}
+.moc{
+	height: 450px;
+    position: fixed;
+    overflow: hidden;
+}
+
+.rotated {
+	transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+}
+.img{transition: all 0.5s ease;}
+
+#cart_widget td, #recent_widget{
+	font-size: 12px;
+}
+
+.fotorama__wrap{
+	width: 30%;
+	margin: 20px auto;
+}
+
